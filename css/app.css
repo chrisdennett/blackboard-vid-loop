@@ -6,6 +6,7 @@ body {
 }
 
 video {
+  height: 100vh;
   position: fixed;
   /*max-height: 500px;*/
   /*transform: skew(15deg);
