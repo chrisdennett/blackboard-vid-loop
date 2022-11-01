@@ -41,7 +41,7 @@
         //gui.add(params, "rotateY").min(-40).max(40).step(1).onChange(updateProps);
         //gui.add(params, "rotateZ").min(-40).max(40).step(1).onChange(updateProps);
         gui.add(params, "perspective").min(1).max(30).step(0.001).onChange(updateProps);
-        gui.add(params, "maxHeight").min(100).max(1000).step(1).onChange(updateProps);
+        gui.add(params, "maxHeight").min(100).max(1280).step(1).onChange(updateProps);
 
         gui.closed = true;
      
@@ -53,9 +53,9 @@
         updateProps();
         
         function updateProps(){
-          vid.style.bottom = params.bottom + "px";
+          // vid.style.bottom = params.bottom + "px";
           vid.style.maxHeight = params.maxHeight + "px";
-          vid.style.transform = `skew(${params.skew}deg) perspective(${params.perspective}cm) rotateX(${params.rotateX}deg)`;
+          // vid.style.transform = `skew(${params.skew}deg) perspective(${params.perspective}cm) rotateX(${params.rotateX}deg)`;
         }
         
       </script>
