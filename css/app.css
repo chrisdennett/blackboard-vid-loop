@@ -5,6 +5,10 @@ body {
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
+.dg {
+  display: none;
+}
+
 video {
   height: 100vh;
   position: fixed;
