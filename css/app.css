@@ -6,6 +6,10 @@ body {
   overflow: hidden;
 }
 
+.dg {
+  display: none;
+}
+
 video {
   height: 720px;
   position: fixed;
