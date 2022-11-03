@@ -3,11 +3,13 @@ body {
   min-height: 100vh;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  overflow: hidden;
 }
 
 video {
-  height: 100vh;
+  height: 720px;
   position: fixed;
+  bottom: 0;
   /*max-height: 500px;*/
   /*transform: skew(15deg);
   transform: perspective(9cm) rotateX(-15deg) rotateY(30deg);

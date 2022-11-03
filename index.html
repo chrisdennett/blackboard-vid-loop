@@ -18,6 +18,46 @@
       
       <script>
         const video = document.getElementById("vid");
+        let vidHeight = 720;
+        let vidLeft = 0;
+        let vidBottom = 0;
+
+        document.addEventListener('keydown', (event) => {
+        var name = event.key;
+        var code = event.code;
+        // Alert the key name and key code on keydown
+
+        if(name === "ArrowUp"){
+          vidBottom += 5;
+        }
+        else if(name === "ArrowDown"){
+          vidBottom -= 5;
+        }
+        else if(name === "ArrowLeft"){
+          vidLeft -= 5;
+        }
+        else if(name === "ArrowRight"){
+          vidLeft += 5;
+        }
+        else if(name === "["){
+          vidHeight -= 5;
+        }
+        else if(name === "]"){
+          vidHeight += 5;
+        }
+        else{
+          console.log('vidHeight:',vidHeight, "vidBottom:",vidBottom, "vidLeft:",vidLeft);
+        }
+
+        // console.log('vidHeight:',vidHeight, "vidBottom:",vidBottom, "vidLeft:",vidLeft);
+        video.style.height = vidHeight + "px";
+        video.style.bottom = vidBottom + "px";
+        video.style.left = vidLeft + "px";
+
+      }, false);
+
+
+
         let isPlaying = true;
         video.addEventListener('click', () => {
           if(isPlaying){
